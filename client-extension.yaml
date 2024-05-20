@@ -1,0 +1,19 @@
+assemble:
+  - from: vite-build
+    include:
+      - "**/*"
+    into: static/
+
+sample-custom-element:
+  type: customElement
+  friendlyURLMapping: sample-custom-element
+  htmlElementName: sample-custom-element
+  instanceable: false
+  name: Sample Custom Element
+  portletCategoryName: category.client-extensions
+  properties: {}
+  description: "A sample custom element built using React and Vite."
+  urls:
+    - http://localhost:3000/@vite/client
+    - http://localhost:3000/src/sample-custom-element/main.tsx
+  useESM: true

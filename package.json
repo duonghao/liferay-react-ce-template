@@ -1,0 +1,32 @@
+{
+  "name": "liferay-react-ce-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:lcl": "vite build --mode development",
+    "build:prd": "vite build --mode production",
+    "preview": "vite preview",
+    "deploy": "blade gw clean && blade gw deployPrd && lcp deploy -p lctlxcapactrainee2024-extprd --extension dist/custom-elements.zip"
+  },
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.12.11",
+    "@types/react": "^16.14.58",
+    "@types/react-dom": "16.9.24",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "glob": "^10.3.15",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
