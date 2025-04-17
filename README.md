@@ -1,24 +1,8 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get a Front-end Liferay Client Extension (CX) working with React and Vite with HMR. The template can be used to deploy a single CX or a bundle of CXs, all of which share common dependancies.
+This template provides a minimal setup to get a Front-end Liferay Client Extension (CX) working with React and Vite with HMR. The template can be used to deploy a single CX or a bundle of CXs, all of which share common dependencies.
 
 ## Setup
-
-### Enabling HMR
-
-For development purposes, in local liferay instances vite's dev server is used to serve static files. By default, liferay is unable to recognise changes to files being served and refresh on change. To enable this, the following script must be injected on liferay's end.
-
-```html
-<script type="module">
-  import RefreshRuntime from 'http://localhost:5173/@react-refresh'
-  RefreshRuntime.injectIntoGlobalHook(window)
-  window.$RefreshReg$ = () => {}
-  window.$RefreshSig$ = () => (type) => type
-  window.__vite_plugin_react_preamble_installed__ = true
-</script>
-```
-
-Add this script to Site Settings -> Analytics -> Matomo.
 
 ## Adding New Front-end CX
 

@@ -1,5 +1,0 @@
-tasks.register("buildPrd", Exec) {
-	commandLine "npm", "run", "build:prd"
-	inputs.dir('src')
-	outputs.dir('dist')
-}

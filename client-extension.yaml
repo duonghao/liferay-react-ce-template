@@ -2,7 +2,7 @@ assemble:
   - from: vite-build
     include:
       - "**/*"
-    into: static/
+    into: static
 
 sample-custom-element:
   type: customElement
@@ -15,5 +15,6 @@ sample-custom-element:
   description: "A sample custom element built using React and Vite."
   urls:
     - http://localhost:3000/@vite/client
+    - http://localhost:3000/@vite/refresh.ts
     - http://localhost:3000/src/sample-custom-element/main.tsx
   useESM: true
